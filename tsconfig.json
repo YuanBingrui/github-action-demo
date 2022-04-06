@@ -3,7 +3,8 @@
     "strict": true,
     "target": "es5",
     "module": "commonjs",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "outDir": "./dist"
   },
   "include": ["index.ts"]
 }
