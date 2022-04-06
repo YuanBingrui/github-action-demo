@@ -1,0 +1,14 @@
+{
+  "name": "github-action-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:YuanBingrui/github-action-demo.git",
+  "author": "xiaobaijun <bingrui_yuan0721@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

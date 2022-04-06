@@ -1,0 +1,26 @@
+name: github-action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: build job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14.x'
+          cache: 'yarn'
+      - name: run script
+        run: echo Hello world!
+
+      - name: node version
+        run: node -v
+
+      - name: intall dep
+        run: yarn -v
+      - run: yarn install
+      - run: yarn build
